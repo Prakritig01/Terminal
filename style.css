@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family : Arial;
+  letter-spacing: 2px;
+  color: rgb(231, 224, 224);
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background: rgb(9, 121, 54);
+  background: linear-gradient(
+    60deg,
+    rgb(74, 220, 132) 42%,
+    rgb(248, 130, 117) 100%
+  ); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 200px auto; */
+ 
+}
+
+.box {
+  width: 85%;
+  height: 85%;
+  background-color: rgba(22, 19, 19, 0.674);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  border-radius: 10px;
+  animation: box 600ms cubic-bezier(0.39,0.575,0.565,1);
+}
+
+.first-line{
+    height: 40px;
+    /* border: 1px solid white; */
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+.three-dots{
+    width: 8%;
+display: flex;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+/* position: relative;
+top: 10px; */
+/* border: 1px solid white; */
+}
+
+.circle{
+    height: 1em;
+    width: 1em;
+    /* background-color: white; */
+    /* border: 1px solid white; */
+    border: none;
+    border-radius: 20px;
+}
+
+div #red{
+    background-color: red;
+}
+div #green{
+    background-color: green;
+}
+div #yellow{
+    background-color: yellow;
+}
+
+.first-line-text{
+    /* border: 1px solid white; */
+    color: rgba(255, 255, 255, 0.784);
+    position: relative;
+    left: 25em; 
+    display: flex;
+    align-items: center;
+}
+
+
+.id{
+    color: rgb(9, 217, 9);
+    /* margin-left: 20px; */
+    /* background-color: transparent; */
+}
+
+.main{
+    color: yellow;
+    margin-left: 10px;
+}
+
+.arrow{
+    color: red;
+    margin-left: 10px;
+}
+
+#text{
+    margin-left: 10px;
+}
+
+.second-line,.third-line,.forth-line,.fifth-line{
+    margin-top: 20px;
+    /* border: 1px solid white; */
+}
+
+.cursor{
+    display: inline-block;
+    background-color: #bbb;
+    height: 1.2em;
+    color: transparent;
+    vertical-align: text-bottom;
+    
+}
+.blink{
+    animation: blinker steps(1) 500ms infinite alternate;
+}
+
+.fifth-line{
+    visibility: hidden;
+}
+
+.fifth-line input[type = "text"]{
+    background-color: transparent;
+    border: none;
+    width: 40%;
+    outline: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes blinker {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes box {
+    from{
+        opacity: 0;
+        transform: scale(0.8) translateY(5rem);
+        box-shadow: none;
+        width: 75%;
+        height: 75%;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 85%;
+        height: 85%;
+    }
+}
+
