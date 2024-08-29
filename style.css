@@ -101,11 +101,11 @@ div #yellow{
     margin-left: 10px;
 }
 
-#text{
+.text{
     margin-left: 10px;
 }
 
-.second-line,.third-line,.forth-line,.fifth-line{
+.second-line,.third-line,.forth-line,.fifth-line,.second-page-second-line{
     margin-top: 20px;
     /* border: 1px solid white; */
 }
@@ -126,7 +126,7 @@ div #yellow{
     visibility: hidden;
 }
 
-.fifth-line input[type = "text"]{
+.fifth-line input[type = "text"],.second-page-third-line input[type="text"]{
     background-color: transparent;
     border: none;
     width: 40%;
@@ -134,7 +134,12 @@ div #yellow{
 
 }
 
-
+#second-page-second-para{
+    margin-bottom: 20px;
+}
+.second-page-second-line,.second-page-third-line{
+    visibility: hidden;
+}
 
 
 
